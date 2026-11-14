@@ -1,14 +1,16 @@
 # Streaming & subscriptions
 
-A [Securo](https://github.com/securo-finance/securo) plugin that sorts your subscriptions into three categories, all in the built-in **Lifestyle** group:
+A [Securo](https://github.com/securo-finance/securo) plugin that sorts your subscriptions into five categories, all in the built-in **Lifestyle** group:
 
-- **Video streaming**: Netflix, Disney+, HBO Max, Prime Video, Globoplay, Paramount+, Apple TV, Crunchyroll, MUBI, DAZN and more
-- **Music & podcasts**: Spotify, Deezer, Tidal, Apple Music, YouTube Music and Premium, Amazon Music, Audible, SoundCloud
-- **Apps & cloud**: iCloud, Google One, Dropbox, Microsoft 365, Adobe, ChatGPT, Claude, Notion, Canva, 1Password, Bitwarden, Proton
+- **Video streaming**: Netflix, Disney+, Max, Prime Video, Globoplay, Paramount+, Apple TV, Telecine, Claro TV+, Peacock, Hulu, Crunchyroll, MUBI, DAZN, Canal+, SkyShowtime, RTL+, Movistar+, ViX and more
+- **Music & podcasts**: Spotify, Deezer, Tidal, Qobuz, Apple Music, YouTube Music and Premium, Amazon Music, SiriusXM, Audible, Storytel, Ubook, Skeelo, SoundCloud
+- **Apps & cloud**: iCloud, Apple One, Google One, Google Workspace, Dropbox, OneDrive, Microsoft 365, Adobe, ChatGPT, Claude, Gemini, Perplexity, GitHub, Notion, Canva, Figma, Duolingo, 1Password, Bitwarden, Proton, NordVPN and more
+- **Games**: Game Pass, Xbox, PlayStation, Nintendo, Steam, EA Play, Ubisoft, GeForce Now, Epic Games, Battle.net, Roblox
+- **News & reading**: Kindle Unlimited, Kobo Plus, Scribd, Medium, Substack, and newspapers and magazines in Brazil, Europe and the US
 
-The rules match the merchant name in the transaction description. Installing shows a preview of every category and rule before anything changes, and categories you already have aren't duplicated.
+The rules match the merchant name in the transaction description. Installing shows a preview of every category and rule before anything changes, and categories you already have aren't duplicated. Transactions keep the categories they already have; the rules apply to new ones.
 
-Names are translated into English, Portuguese, Spanish, French, German and Italian.
+Category names are translated into English, Portuguese (Brazil and Portugal), Spanish, French, German and Italian.
 
 Missing a service? Open an issue or a pull request.
 

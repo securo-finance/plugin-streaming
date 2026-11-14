@@ -10,15 +10,15 @@
     "it": "Streaming e abbonamenti"
   },
   "description": {
-    "en": "Categories and rules for video, music, and app or cloud subscriptions: Netflix, Spotify, iCloud, ChatGPT and more.",
-    "pt-BR": "Categorias e regras para assinaturas de vídeo, música, apps e nuvem: Netflix, Spotify, iCloud, ChatGPT e outros.",
-    "pt-PT": "Categorias e regras para subscrições de vídeo, música, apps e nuvem: Netflix, Spotify, iCloud, ChatGPT e outros.",
-    "es": "Categorías y reglas para suscripciones de video, música, apps y nube: Netflix, Spotify, iCloud, ChatGPT y más.",
-    "fr": "Catégories et règles pour les abonnements vidéo, musique, applis et cloud : Netflix, Spotify, iCloud, ChatGPT et plus.",
-    "de": "Kategorien und Regeln für Video-, Musik-, App- und Cloud-Abos: Netflix, Spotify, iCloud, ChatGPT und mehr.",
-    "it": "Categorie e regole per abbonamenti video, musica, app e cloud: Netflix, Spotify, iCloud, ChatGPT e altro."
+    "en": "Categories and rules for video, music, games, news and app or cloud subscriptions: Netflix, Spotify, Game Pass, iCloud, ChatGPT and more.",
+    "pt-BR": "Categorias e regras para assinaturas de vídeo, música, jogos, notícias, apps e nuvem: Netflix, Spotify, Game Pass, iCloud, ChatGPT e outros.",
+    "pt-PT": "Categorias e regras para subscrições de vídeo, música, jogos, notícias, apps e nuvem: Netflix, Spotify, Game Pass, iCloud, ChatGPT e outros.",
+    "es": "Categorías y reglas para suscripciones de video, música, videojuegos, noticias, apps y nube: Netflix, Spotify, Game Pass, iCloud, ChatGPT y más.",
+    "fr": "Catégories et règles pour les abonnements vidéo, musique, jeux, presse, applis et cloud : Netflix, Spotify, Game Pass, iCloud, ChatGPT et plus.",
+    "de": "Kategorien und Regeln für Video-, Musik-, Spiele-, Nachrichten-, App- und Cloud-Abos: Netflix, Spotify, Game Pass, iCloud, ChatGPT und mehr.",
+    "it": "Categorie e regole per abbonamenti video, musica, giochi, notizie, app e cloud: Netflix, Spotify, Game Pass, iCloud, ChatGPT e altro."
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": "https://github.com/securo-finance/plugin-streaming",
   "license": "AGPL-3.0-only",
   "min_securo_version": "0.19.0",
@@ -66,8 +66,38 @@
           "it": "App e cloud"
         },
         "group": "lifestyle",
-        "icon": "cloud",
+        "icon": "smartphone",
         "color": "#2563EB"
+      },
+      {
+        "key": "gaming",
+        "name": {
+          "en": "Games",
+          "pt-BR": "Jogos",
+          "pt-PT": "Jogos",
+          "es": "Videojuegos",
+          "fr": "Jeux vidéo",
+          "de": "Games",
+          "it": "Videogiochi"
+        },
+        "group": "lifestyle",
+        "icon": "gamepad-2",
+        "color": "#16A34A"
+      },
+      {
+        "key": "news-reading",
+        "name": {
+          "en": "News & reading",
+          "pt-BR": "Notícias e leitura",
+          "pt-PT": "Notícias e leitura",
+          "es": "Noticias y lectura",
+          "fr": "Presse et lecture",
+          "de": "Nachrichten & Lesen",
+          "it": "Notizie e lettura"
+        },
+        "group": "lifestyle",
+        "icon": "newspaper",
+        "color": "#0EA5E9"
       }
     ],
     "rules": [
@@ -160,6 +190,141 @@
             "field": "description",
             "op": "contains",
             "value": "PLUTO TV"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "MAX.COM"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "PEACOCK"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "HULU"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "STARZ"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "TELECINE"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "UNIVERSAL+"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "CLARO TV+"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "SKY+"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "YOUTUBE TV"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "RAKUTEN TV"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "FILMIN"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "CANAL+"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "NOW TV"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "SKYSHOWTIME"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "SKY SHOWTIME"
+          },
+          {
+            "field": "description",
+            "op": "regex",
+            "value": "\\bJOYN\\b"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "RTL+"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "TIMVISION"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "MEDIASET INFINITY"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "ATRESPLAYER"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "MOVISTAR+"
+          },
+          {
+            "field": "description",
+            "op": "regex",
+            "value": "\\bVIX\\b"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "ESPN+"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "FUBO"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "SLING TV"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "PREMIERE FC"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "DISCOVERY+"
           }
         ],
         "actions": [
@@ -224,6 +389,51 @@
             "field": "description",
             "op": "contains",
             "value": "SOUNDCLOUD"
+          },
+          {
+            "field": "description",
+            "op": "regex",
+            "value": "\\bQOBUZ\\b"
+          },
+          {
+            "field": "description",
+            "op": "regex",
+            "value": "\\bNAPSTER\\b"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "SIRIUSXM"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "STORYTEL"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "UBOOK"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "SKEELO"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "PODIMO"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "PANDORA.COM"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "PANDORA MEDIA"
           }
         ],
         "actions": [
@@ -323,12 +533,340 @@
             "field": "description",
             "op": "regex",
             "value": "\\bPROTON\\b"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "APPLE ONE"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "ONEDRIVE"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "GOOGLE WORKSPACE"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "GSUITE"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "GITHUB"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "MIDJOURNEY"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "PERPLEXITY"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "GOOGLE GEMINI"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "ZOOM.US"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "DUOLINGO"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "GRAMMARLY"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "LASTPASS"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "NORDVPN"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "EXPRESSVPN"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "SURFSHARK"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "EVERNOTE"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "TODOIST"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "FIGMA"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "MEGA.NZ"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "PCLOUD"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "BACKBLAZE"
           }
         ],
         "actions": [
           {
             "op": "set_category",
             "value": "apps-cloud"
+          }
+        ],
+        "priority": 20
+      },
+      {
+        "key": "gaming",
+        "name": "Game subscriptions and stores",
+        "conditions_op": "or",
+        "conditions": [
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "GAME PASS"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "GAMEPASS"
+          },
+          {
+            "field": "description",
+            "op": "regex",
+            "value": "\\bXBOX\\b"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "PLAYSTATION"
+          },
+          {
+            "field": "description",
+            "op": "regex",
+            "value": "\\bPSN\\b"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "NINTENDO"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "STEAMPOWERED"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "STEAM GAMES"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "EA PLAY"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "UBISOFT"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "GEFORCE NOW"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "EPIC GAMES"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "BATTLE.NET"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "BLIZZARD"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "ROBLOX"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "RIOT GAMES"
+          }
+        ],
+        "actions": [
+          {
+            "op": "set_category",
+            "value": "gaming"
+          }
+        ],
+        "priority": 20
+      },
+      {
+        "key": "news-reading",
+        "name": "News, magazines and reading",
+        "conditions_op": "or",
+        "conditions": [
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "KINDLE UNLIMITED"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "KOBO PLUS"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "SCRIBD"
+          },
+          {
+            "field": "description",
+            "op": "regex",
+            "value": "\\bMEDIUM\\.COM\\b"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "SUBSTACK"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "NYTIMES"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "NEW YORK TIMES"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "WSJ"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "WASHINGTON POST"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "THE ECONOMIST"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "FINANCIAL TIMES"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "THE GUARDIAN"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "FOLHA DE S"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "UOL ASSINATURA"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "ESTADAO"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "VALOR ECONOMICO"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "LE MONDE"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "EL PAIS"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "REVISTA PIAUI"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "CORRIERE DELLA SERA"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "DER SPIEGEL"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "SPIEGEL+"
+          },
+          {
+            "field": "description",
+            "op": "contains",
+            "value": "INFOGLOBO"
+          }
+        ],
+        "actions": [
+          {
+            "op": "set_category",
+            "value": "news-reading"
           }
         ],
         "priority": 20
